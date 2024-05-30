@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Add_data"
+        android:title="Add Value"/>
+    <item
+        android:id="@+id/scan"
+        android:title="Crop scan"/>
+    <item
+        android:id="@+id/clear_last_one"
+        android:title="Clear Last Value"/>
+
+</menu>

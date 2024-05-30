@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".formulaire1">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="110dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textColor="@color/lightgreen"
+        android:fontFamily="@font/abril_fatface"
+        android:textSize="32sp" />
+
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/formulaire2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/soustitre"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="255dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:id="@+id/google"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="295dp"
+        android:background="@drawable/frame_border"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:focusable="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/google"
+            android:layout_marginStart="-80dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/googl"
+            android:textColor="#8B000000"
+            android:textSize="26sp" />
+
+    </FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="360dp"
+        android:orientation="horizontal">
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/alice"
+            android:text="@string/or"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@color/black" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="398dp"
+        android:layout_marginEnd="20dp"
+        android:background="#00FFFFFF"
+        android:foreground="@drawable/frame_border" />
+
+    <EditText
+        android:alpha="0.7"
+        android:hint="Email Address "
+        android:textStyle="bold"
+        android:id="@+id/editText_email"
+      android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="textEmailAddress"
+        android:paddingRight="10dp"
+        android:drawableTint="#000000"
+        android:drawableRight="@drawable/baseline_email_24"
+        />
+
+    <EditText
+        android:alpha="0.7"
+        android:hint="Password "
+        android:textStyle="bold"
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="textPassword"
+        android:paddingRight="10dp"
+        android:drawableTint="#000000"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
+        android:textColor="#000000"
+        android:background="#00FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="595dp"
+        android:background="@color/trans"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/forgetpassword"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/textView_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="645dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/conditionaccount3"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="635dp"
+        android:layout_toEndOf="@+id/textView_s"
+        android:background="@color/trans"
+        android:fontFamily="@font/alice"
+        android:text="@string/signup"
+        android:textAllCaps="false"
+        android:textColor="@color/green"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/starte2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/alice"
+        android:text="@string/buttonformulaire"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+</RelativeLayout>

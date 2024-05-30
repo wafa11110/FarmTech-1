@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:elevation="15dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_width="370dp"
+    android:layout_height="525dp"
+    android:background="@drawable/weather"
+    >
+        <ImageView
+            android:id="@+id/more_vert"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="320dp"
+            android:src="@drawable/baseline_more_vert_24"
+            />
+        <TextView
+            android:id="@+id/farmname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abril_fatface"
+            android:text="vegetable garden"
+            android:layout_gravity="center"
+            android:layout_marginTop="-40dp"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:text="Location"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="350dp"
+            android:layout_height="330dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:elevation="8dp"
+            />
+        <FrameLayout
+            android:id="@+id/frameLayout3"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:background="@drawable/weather"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:elevation="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                        android:src="@drawable/baseline_grain_24"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"/>
+                <TextView
+                    android:id="@+id/soiltextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="Soil Type"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="50dp"
+                    android:fontFamily="@font/alice"
+                    />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/frameLayout4"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:background="@drawable/weather"
+            android:layout_marginTop="-50dp"
+            android:layout_marginStart="200dp"
+            android:elevation="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_reorder_24"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"/>
+                <TextView
+                    android:id="@+id/spacetextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="Space"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="50dp"
+                    android:fontFamily="@font/alice"
+                    />
+        </FrameLayout>
+
+
+</LinearLayout>

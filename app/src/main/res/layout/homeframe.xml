@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:elevation="15dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="370dp"
+    android:layout_height="290dp"
+    android:background="@drawable/weather"
+    >
+
+    <ImageView
+        android:id="@+id/imagefarm"
+        android:layout_width="320dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/farmadd"
+        android:elevation="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_photo_camera_24"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <TextView
+        android:id="@+id/farm_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/alice"
+        android:text="Vegetable garden"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/baseline_location_on_24"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="22dp"/>
+    <TextView
+        android:id="@+id/textviewlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-22dp"
+        android:layout_marginStart="55dp"
+        android:textSize="20sp"
+        android:text="Location"
+        android:fontFamily="@font/alice"
+        android:clickable="true"
+        android:focusable="true"
+        />
+    <TextView
+        android:id="@+id/textviewcrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crop Type"
+        android:textSize="20sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/alice"/>
+    <Button
+        android:id="@+id/supprimerframelayout"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginStart="230dp"
+        android:background="@drawable/frame_border2"
+        android:text="Hervest"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/alice"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

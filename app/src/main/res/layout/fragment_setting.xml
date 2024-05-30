@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".settingFragment">
+
+    <FrameLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="370dp"
+        android:layout_height="160dp"
+        android:background="@drawable/frameprofile"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.200"
+        android:elevation="8dp">
+
+
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/black_notification"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/alice"
+            android:text="@string/notification"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Switch
+                android:id="@+id/notifications_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="145dp"
+                android:switchMinWidth="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="300dp"
+                android:textColor="#000000" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="10dp"
+                android:background="#43000000"
+                android:layout_marginTop="80dp"
+                />
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_language_24"
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/Languagepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/langue"
+            android:fontFamily="@font/alice"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="80dp"
+            />
+
+
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="370dp"
+        android:layout_height="320dp"
+        android:background="@drawable/frameprofile"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.680"
+        android:elevation="8dp">
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/black_account"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/account_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accountsetting"
+            android:fontFamily="@font/alice"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="80dp"
+            />
+        <View
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:background="#43000000"
+            android:layout_marginTop="80dp"
+            />
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_build_24"
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/supportpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/support"
+            android:fontFamily="@font/alice"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="80dp"
+            />
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:background="#43000000"
+            android:layout_marginTop="160dp"
+            />
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_question_answer_24"
+            android:layout_marginTop="185dp"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/faqpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faq"
+            android:fontFamily="@font/alice"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="185dp"
+            android:layout_marginStart="80dp"
+            />
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:background="#43000000"
+            android:layout_marginTop="240dp"
+            />
+
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_info_24"
+            android:layout_marginTop="265dp"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/aboutpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutt"
+            android:fontFamily="@font/alice"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="265dp"
+            android:layout_marginStart="80dp"
+            />
+
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar10"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setting"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/alice"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

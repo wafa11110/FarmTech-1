@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faq">
+    <RelativeLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:text="@string/faq"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+        <LinearLayout
+            android:id="@+id/faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="320dp">
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/frameprofile"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:text="@string/faq1"
+                android:textColor="@color/black"
+                android:padding="18dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/alice"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/faq2"
+                android:textColor="@color/black"
+                android:padding="18dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/alice"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/frameprofile"
+                android:text="@string/faq3"
+                android:textColor="@color/black"
+                android:padding="18dp"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/alice"/>
+
+            <TextView
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/faq4"
+                android:textColor="@color/black"
+                android:padding="18dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/alice"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/frameprofile"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:text="@string/faq5"
+                android:textColor="@color/black"
+                android:padding="18dp"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/alice"/>
+
+            <TextView
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/faq6"
+                android:textColor="@color/black"
+                android:padding="18dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/alice"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/frameprofile"
+                android:text="@string/faq7"
+                android:textColor="@color/black"
+                android:padding="18dp"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/alice"/>
+
+            <TextView
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/faq8"
+                android:textColor="@color/black"
+                android:padding="18dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/alice"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
