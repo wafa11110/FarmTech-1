@@ -1,38 +1,38 @@
 package com.example.farmtech;
 
 import android.content.Intent;
-import okhttp3.OkHttpClient;
-import okhttp3.logging.HttpLoggingInterceptor;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+
+import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import java.io.IOException;
 import android.location.Address;
 import android.location.Geocoder;
 import android.app.Activity;
@@ -182,6 +182,7 @@ public class addFragment extends Fragment {
                     }
                 });
     }
+
     private void clearFields() {
         farmNameEditText.setText("");
         spaceEditText.setText("");
@@ -189,14 +190,12 @@ public class addFragment extends Fragment {
         locationEditText.setText("");
         soilTypeEditText.setText("");
     }
+
     private void getRecommendations(String farmName, String space, String crop, String location, String soilType) {
-
-
-        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
-        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
-
         OkHttpClient client = new OkHttpClient.Builder()
-                .addInterceptor(logging)
+                .connectTimeout(10, java.util.concurrent.TimeUnit.SECONDS)
+                .readTimeout(30, java.util.concurrent.TimeUnit.SECONDS)
+                .writeTimeout(15, java.util.concurrent.TimeUnit.SECONDS)
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -213,6 +212,8 @@ public class addFragment extends Fragment {
         requestData.put("crop_type", crop);
         requestData.put("farm_location", location);
         requestData.put("soil_type", soilType);
+
+        Call<RecommendationResponse> call = recommendationApi.getRecommendations(requestData);
 
         call.enqueue(new Callback<RecommendationResponse>() {
             @Override
